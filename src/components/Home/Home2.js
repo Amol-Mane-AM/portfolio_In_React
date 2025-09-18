@@ -15,46 +15,84 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Java,SpringBoot, Javascript , ReactJs , HTML and CSS. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
-          </Col>
+  <h1 style={{ fontSize: "2.6em" }}>
+    LET ME <span className="purple"> INTRODUCE </span> MYSELF
+  </h1>
+  <p className="home-about-body">
+    I fell in love with programming and I have at least learnt
+    something, I think… 🤷‍♂️
+    <br />
+    <br />I am fluent in classics like
+    <i>
+      <b className="purple"> Java, SpringBoot, Javascript, ReactJs, HTML and CSS. </b>
+    </i>
+    <br />
+    <br />
+    My field of Interest's are building new &nbsp;
+    <i>
+      <b className="purple">Web Technologies and Products </b> and
+      also in areas related to{" "}
+      <b className="purple">
+        Blockchain.
+      </b>
+    </i>
+    <br />
+    <br />
+    Whenever possible, I also apply my passion for developing products
+    with <b className="purple">Node.js</b> and
+    <i>
+      <b className="purple">
+        {" "}
+        Modern Javascript Library and Frameworks
+      </b>
+    </i>
+    &nbsp; like
+    <i>
+      <b className="purple"> React.js and Next.js</b>
+    </i>
+    <br />
+    <br />
+    Apart from coding, I love exploring &nbsp;
+    <i>
+      <b className="purple">Cloud Technologies (AWS, Azure)</b>
+    </i>
+    , working on &nbsp;
+    <i>
+      <b className="purple">Database Management (SQL, NoSQL)</b>
+    </i>
+    , and sharpening my skills in &nbsp;
+    <i>
+      <b className="purple">System Design & Scalability.</b>
+    </i>
+    <br />
+    <br />
+    My ultimate goal is to build &nbsp;
+    <i>
+      <b className="purple">impactful digital experiences </b>
+    </i>
+    that are not only functional but also &nbsp;
+    <i>
+      <b className="purple">efficient, scalable, and future-ready.</b>
+    </i>
+  </p>
+</Col>
+
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar"   style={{ height: "300px", width: "950px" }}  />
+              <img src={myImg} className="img-fluid" alt="avatar"  
+              style={{
+    height: "530px",
+    width: "950px",
+    borderRadius: "20px",        // rounded corners
+    boxShadow: "0 8px 16px rgba(0,0,0,0.3)", // soft shadow
+    border: "4px solid #f0f0f0", // light border
+    objectFit: "cover",          // ensures proper fit
+    transition: "transform 0.3s ease-in-out"
+  }}
+  onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+  onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+
+/>
             </Tilt>
           </Col>
         </Row>
